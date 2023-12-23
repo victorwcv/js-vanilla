@@ -1,51 +1,39 @@
-const inputsTabla1 = document.querySelectorAll(".tabla-1 input");
-const inputsTabla2 = document.querySelectorAll(".tabla-2 input");
-const inputsTabla3 = document.querySelectorAll(".tabla-3 input");
-const porcentaje = document.getElementById('porciento-1')
-const porcentaje2 = document.getElementById('porciento-2')
-const porcentaje3 = document.getElementById('porciento-3')
-porcentaje.innerHTML = '% 0';
-porcentaje2.innerHTML = '% 0';
-porcentaje3.innerHTML = '% 0';
+// Obtener todos los botones de calcular por su clase
+const calculateButtons = document.querySelectorAll(".btn");
 
-const nums1 = [];
-const nums2 = [];
-const nums3 = [];
+// Iterar sobre cada botón de calcular
+calculateButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    // Obtener el div padre del botón actual
+    const esphereDiv = button.parentElement.parentElement;
+    console.log(esphereDiv);
 
-inputsTabla1.forEach(input => {
+    // Encontrar los inputs dentro del div padre por su clase
+    const inputs = esphereDiv.querySelectorAll(".input");
 
-  input.addEventListener('change', (e) => {
-    nums1.push( parseInt(e.target.value));
-    console.log(nums1); 
-    if(nums1.length === 3) {
-      let ops = ((nums1[0] + (nums1[1]/12) + (nums1[2]/96)) / 64.98)*100;
-      porcentaje.innerHTML = `% ${ops.toFixed(2)}`
+    // Obtener los valores de los inputs
+    const pies = parseInt(inputs[0].value) || 0;
+    const pulgadas = parseInt(inputs[1].value) || 0;
+    const octavos = parseInt(inputs[2].value) || 0;
+
+    const selectSphere = esphereDiv.querySelector('.heading').innerHTML;
+    let factor;
+    if (selectSphere === 'VBA-3105') {
+      factor = 64.98;
+    } else {
+      factor = 64.61;
     }
+
+    // Realizar el cálculo aquí según tu lógica deseada
+    const resultado = (
+      ((pies + pulgadas / 12 + octavos / 96) / factor) *
+      100
+    ).toFixed(2);
+
+    // Encontrar el elemento de resultado dentro del div padre por su clase
+    const resultElement = esphereDiv.querySelector(".calculo .resultado");
+
+    // Mostrar el resultado en el elemento correspondiente
+    resultElement.textContent = `${resultado} %`;
   });
 });
-
-inputsTabla2.forEach(input => {
-
-  input.addEventListener('change', (e) => {
-    nums2.push( parseInt(e.target.value));
-    console.log(nums2); 
-    if(nums2.length === 3) {
-      let ops = ((nums2[0] + (nums2[1]/12) + (nums2[2]/96)) / 64.61)*100;
-      porcentaje2.innerHTML = `% ${ops.toFixed(2)}`
-    }
-  });
-});
-
-inputsTabla3.forEach(input => {
-
-  input.addEventListener('change', (e) => {
-    nums3.push( parseInt(e.target.value));
-    console.log(nums3); 
-    if(nums3.length === 3) {
-      let ops = ((nums3[0] + (nums3[1]/12) + (nums3[2]/96)) / 64.61)*100;
-      porcentaje3.innerHTML = `% ${ops.toFixed(2)}`
-    }
-  });
-});
-
-  
