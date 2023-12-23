@@ -21,7 +21,7 @@
 body {
   background: linear-gradient(var(--one-color), var(--seven-color));
   min-height: 100vh;
-  min-width: 350px;
+  min-width: 400px;
   display: flex;
   flex-direction: column;
 }
@@ -50,7 +50,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  margin: 1rem;
+  margin: 1rem 2.5rem;
   background-color: var(--six-color);
   border-radius: 5px;
   box-shadow: 0 0 5px black;
