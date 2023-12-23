@@ -1,0 +1,106 @@
+:root {
+  --one-color: rgb(232, 243, 246);
+  --two-color: rgb(28, 103, 132);
+  --three-color: rgb(18, 49, 69);
+  --four-color: rgb(116, 153, 172);
+  --five-color: rgb(20, 60, 75);
+  --six-color: rgb(126, 190, 212);
+  --seven-color: rgb(148, 164, 180);
+  --eight-color: rgb(101, 167, 204 );
+  --nine-color: rgb(84, 156, 181);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(var(--one-color), var(--seven-color));
+  min-height: 100vh;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-heading {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1.5rem;
+  margin-bottom: 1rem ;
+  color: var(--three-color);
+  background-color: var(--six-color);
+  box-shadow: 0 0 10px black;
+}
+
+.spheres-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem auto;
+  max-width: 1200px;
+  min-width: 350px;
+}
+
+.sphere-container {
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: var(--six-color);
+  border-radius: 5px;
+  box-shadow: 0 0 5px black;
+}
+
+.sphere-container .heading {
+  font-size: 1.6rem;
+  text-align: center;
+  color: var(--five-color);
+  padding: .3rem 0px;
+}
+
+.sphere-container .input {
+  font-size: 1.2rem;
+  padding: .4rem;
+  margin-bottom: .5rem;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.sphere-container label {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin-bottom: .3rem;
+}
+
+.sphere-container .calculo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: .5rem 0px ;
+}
+
+.sphere-container .calculo .btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  transition: all .3s ease;
+  box-shadow: 0 0 5px black;
+  &.btn:hover {
+    cursor: pointer;
+  }
+  &.btn:active {
+    transform: scale(.95);
+    box-shadow: none;
+  }
+}
+
+.sphere-container .calculo .resultado {
+  font-size: 1.3rem;
+}
