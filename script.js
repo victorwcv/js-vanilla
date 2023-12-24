@@ -1,5 +1,6 @@
 // Obtener todos los botones de calcular por su clase
-const calculateButtons = document.querySelectorAll(".btn");
+const calculateButtons = document.querySelectorAll("#first-section .btn");
+const buttonMAU = document.getElementById('btn-MAU');
 
 // Iterar sobre cada botón de calcular
 calculateButtons.forEach((button) => {
@@ -37,3 +38,20 @@ calculateButtons.forEach((button) => {
     resultElement.textContent = `${resultado} %`;
   });
 });
+
+buttonMAU.addEventListener('click', () => {
+  const parentDiv = buttonMAU.parentElement;
+  console.log(parentDiv);
+  const inputs = parentDiv.querySelectorAll('.row-cont .input-b');
+  console.log(inputs)
+  const nominado = parseInt(inputs[0].value) || 0;
+  const enviado = parseInt(inputs[1].value) || 0;
+  const procesado = parseInt(inputs[3].value) || 0;
+  console.log(nominado, enviado, procesado);
+  inputs[2].value = nominado - enviado + procesado
+})
+
+
+function onlyNumbers(input) {
+  input.value = input.value.replace(/\D/g, '');
+}
