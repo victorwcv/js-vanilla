@@ -22,7 +22,7 @@ body {
   background: linear-gradient(var(--one-color), var(--seven-color));
   min-height: 100vh;
   min-width: 400px;
-  padding-top: 100PX;
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
 }
@@ -52,10 +52,9 @@ body {
 }
 
 .container {
-  min-width: 300px;
+  min-width: fit-content;
   display: flex;
   flex-direction: column;
-  /* overflow: auto; */
   padding: 1rem;
   margin: 1rem;
   background-color: var(--six-color);
@@ -80,8 +79,14 @@ body {
   border: none;
   border-radius: 5px;
 }
+.label-mau {
+  font-size: 1rem;
+  width: 250px;
+  margin-right: 2rem;
+  margin-bottom: .3rem;
+}
 
-.container label {
+.container > label {
   font-size: 1.2rem;
   text-transform: capitalize;
   margin-bottom: .3rem;
@@ -89,6 +94,7 @@ body {
 
 .container .calculo {
   display: flex;
+  /* column-gap: 50px; */
   justify-content: space-between;
   align-items: center;
   margin: .5rem 0px ;
@@ -115,11 +121,17 @@ body {
 .container .calculo .resultado {
   font-size: 1.4rem;
   color: blue;
+  width: 130px;
+  text-align: end;
 }
 
 
 
 
+
+#second-section .container {
+  margin: 0;
+}
 
 .row-cont {
   display: flex;
@@ -129,11 +141,6 @@ body {
   margin-bottom: 1rem;
 }
 
-.label-mau {
-  font-size: 1rem;
-  width: 250px;
-  margin-right: 2rem;
-}
 
 .input-b {
   font-size: 1.4rem;
@@ -180,8 +187,17 @@ body {
   text-align: center;
 }
 
+.overflow {
+  margin: 15px;
+  min-width: 300px;
+  overflow-x: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 5px black;
+}
+
 @media screen and (max-width: 750px) {
-  #second-section .container {
-    overflow: scroll;
-  }
+ .main-heading {
+  font-size: 1.4rem;
+ }
+
 }

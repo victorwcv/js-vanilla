@@ -51,99 +51,104 @@
       <div class="container">
         <h2 class="heading">Datos del MAU-16010B</h2>
         <div class="row-cont">
-          <label class="label-mau" for="">Nominado para el dia operativo(BBL):</label>
+          <label class="label-mau" >Nominado para el dia operativo(BBL):</label>
           <input class="input-b" type="text" name="" id="" placeholder="0" oninput="onlyNumbers(this)">
         </div>
         <div class="row-cont">
-          <label class="label-mau" for="">Enviado por TGP a la hora de Cálculo (BBL):</label>
+          <label class="label-mau" >Enviado por TGP a la hora de Cálculo (BBL):</label>
           <input class="input-b" type="text" name="" id="" placeholder="0" oninput="onlyNumbers(this)">
         </div>
         <div class="row-cont">
-          <label class="label-mau" for="">BPH necesarios para cumplir Nominal:</label>
+          <label class="label-mau" >BPH necesarios para cumplir Nominal:</label>
           <input class="input-b" type="text" value="0" disabled>
         </div>
         <div class="row-cont">
-          <label class="label-mau" for="">Procesado por PFLGN a la hora del Calculo (BBL):</label>
+          <label class="label-mau" >Procesado por PFLGN a la hora del Calculo (BBL):</label>
           <input class="input-b" type="text" name="" id="" placeholder="0" oninput="onlyNumbers(this)">
         </div>
         <button id="btn-MAU" class="btn">Calcular BPH necesarios</button>
       </div>
     </section>
     <section id="second-section" class="section">
-      <div class="container">
-        <div class="heading-b">
-          <h1 >FIC-GPM</h1>
-          <h1 >Cargas a planta BPD</h1>
-          <h1 >% Capacidad</h1>
-        </div>
-        <div class="row-cont-b">
-          <p>Planta1</p>
-          <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()">
-          <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
-          <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
-        </div>
-        <div class="row-cont-b">
-          <p>Planta2</p>
-          <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()">
-          <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
-          <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
-
-        </div>
-        <div class="row-cont-b">
-          <p>Planta3</p>
-          <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()">
-          <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
-          <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
-
-        </div>
-        <div class="row-cont-b">
-          <p>Total</p>
-          <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
-
-        </div>
-        <div class="row-cont-b">
-          <p>Total c/ Factor</p>
-          <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()">
-          <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
-          <button class="btn">Calcular</button>
+      <div class="overflow">
+        <div class="container ">
+          <div class='heading-b'>
+            <h1 >FIC-GPM</h1>
+            <h1 >Cargas a planta BPD</h1>
+            <h1 >% Capacidad</h1>
+          </div>
+          <div class="row-cont-b">
+            <p>Planta1</p>
+            <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()">
+            <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
+            <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
+          </div>
+          <div class="row-cont-b">
+            <p>Planta2</p>
+            <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()">
+            <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
+            <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
+  
+          </div>
+          <div class="row-cont-b">
+            <p>Planta3</p>
+            <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()">
+            <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
+            <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
+  
+          </div>
+          <div class="row-cont-b">
+            <p>Total</p>
+            <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
+  
+          </div>
+          <div class="row-cont-b">
+            <p>Total c/ Factor</p>
+            <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()">
+            <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
+            <button class="btn">Calcular</button>
+          </div>
         </div>
       </div>
-      <div class="container">
-        <div class="heading-b">
-          <h1 >FIC-GPM</h1>
-          <h1 >Cargas a planta BPD</h1>
-          <h1 >% Capacidad</h1>
-        </div>
-        <div class="row-cont-b">
-          <p>Planta1</p>
-          <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()">
-          <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
-          <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
-        </div>
-        <div class="row-cont-b">
-          <p>Planta2</p>
-          <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()">
-          <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
-          <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
+      <div class="overflow">
 
-        </div>
-        <div class="row-cont-b">
-          <p>Planta3</p>
-          <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()">
-          <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
-          <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
-
-        </div>
-        <div class="row-cont-b">
-          <p>Total</p>
-          <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
-
-        </div>
-        <div class="row-cont-b">
-          <p>Total c/ Factor</p>
-          <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()">
-          <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
-          <button class="btn">Calcular</button>
+        <div class="container">
+          <div class="heading-b">
+            <h1 >FIC-GPM</h1>
+            <h1 >Cargas a planta BPD</h1>
+            <h1 >% Capacidad</h1>
+          </div>
+          <div class="row-cont-b">
+            <p>Planta1</p>
+            <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()">
+            <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
+            <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
+          </div>
+          <div class="row-cont-b">
+            <p>Planta2</p>
+            <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()">
+            <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
+            <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
+  
+          </div>
+          <div class="row-cont-b">
+            <p>Planta3</p>
+            <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()">
+            <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
+            <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
+  
+          </div>
+          <div class="row-cont-b">
+            <p>Total</p>
+            <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
+  
+          </div>
+          <div class="row-cont-b">
+            <p>Total c/ Factor</p>
+            <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()">
+            <input class="input-b" type="text" placeholder="0" onchange="onlyNumbers()" disabled>
+            <button class="btn">Calcular</button>
+          </div>
         </div>
       </div>
     </section>
