@@ -2,7 +2,17 @@
   width: 1200px;
   max-width: 90%;
   margin: 0 auto;
-  
+}
+
+.background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.3;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .main-container {
@@ -16,13 +26,13 @@
 }
 
 .main-container h1 {
-  max-width: 550px;
+  max-width: 700px;
   margin: 0 50px;
   font-size: 3.5em;
-  color: #3e3e3e;
+  color: #2c2c2c;
   line-height: 1.2em;
-  letter-spacing: -0.075em;
-  font-weight: normal;
+  letter-spacing: -0.050em;
+  font-weight: bold;
 }
 
 .buttons-container {
@@ -31,3 +41,4 @@
   flex-wrap: wrap;
   gap: 15px;
 }
+

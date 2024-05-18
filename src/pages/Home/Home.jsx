@@ -4,6 +4,11 @@ import "./home.css";
 const Home = () => {
   return (
     <div className="home">
+      <img
+          src="/public/bg_spheres.webp"
+          alt="bg-spheres"
+          className="background"
+        />
       <div className="main-container">
         <h1>Evolución de Inventarios de las Esferas</h1>
         <div className="buttons-container">
