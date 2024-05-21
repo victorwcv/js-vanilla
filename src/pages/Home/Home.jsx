@@ -10,7 +10,7 @@ const Home = () => {
           className="background"
         />
       <div className="main-container">
-        <h1>Evolución Inventarios de 3 Esferas y 3 Condensadores</h1>
+        <h1>Evolución de Inventarios: Esferas y Condensadores</h1>
         <div className="buttons-container">
           <Button link="./esferas" text="Esferas" />
           <Button link="./condensadores" text="Condensadores" />
