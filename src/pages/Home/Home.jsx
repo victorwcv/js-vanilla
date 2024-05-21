@@ -3,18 +3,17 @@ import "./home.css";
 
 const Home = () => {
   return (
-    <div className="home">
+    <div className="container">
       <img
-          src="/public/bg_spheres.webp"
+          src="bg_spheres.webp"
           alt="bg-spheres"
           className="background"
         />
       <div className="main-container">
-        <h1>Evolución de Inventarios de las Esferas</h1>
+        <h1>Evolución Inventarios de 3 Esferas y 3 Condensadores</h1>
         <div className="buttons-container">
-          <Button link="./3105" text="Esfera 3105" />
-          <Button link="./13105" text="Esfera 13105" />
-          <Button link="./23105" text="Esfera 23105" />
+          <Button link="./esferas" text="Esferas" />
+          <Button link="./condensadores" text="Condensadores" />
         </div>
       </div>
     </div>

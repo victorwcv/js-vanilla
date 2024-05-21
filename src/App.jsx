@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useGlobalState } from "./context/StatusContext";
-import Esfera13105 from "./pages/Esfera13105/Esfera13105";
-import Esfera23105 from "./pages/Esfera23105/Esfera23105";
-import Esfera3105 from "./pages/Esfera3105/Esfera3105";
+
 import Home from "./pages/Home/Home";
+import Esferas from "./pages/Esferas/Esferas";
+import Condensadores from "./pages/Condensadores/Condensadores";
 
 const App = () => {
   const { globalState } = useGlobalState();
@@ -13,9 +13,8 @@ const App = () => {
         
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/3105" element={<Esfera3105 />} />
-          <Route path="/13105" element={<Esfera13105 />} />
-          <Route path="/23105" element={<Esfera23105 />} />
+          <Route path="/esferas" element={<Esferas />} />
+          <Route path="/condensadores" element={<Condensadores />} />
         </Routes>
       </BrowserRouter>
     </>
